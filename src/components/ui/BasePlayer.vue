@@ -86,29 +86,59 @@ export default {
 </script>
 
 <style scoped>
-.container {
-    max-width: 10vh;
-    max-height: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    user-select: none;
-    touch-action: none;
+@media screen and (min-width: 840px) {
+    .container {
+        max-width: 10vh;
+        max-height: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        user-select: none;
+        touch-action: none;
+    }
+
+    .circle {
+        width: 4vh;
+        height: 4vh;
+        line-height: 4vh;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: slateblue;
+        text-align: center;
+        background: #fff;
+    }
+
+    .name {
+        font-size: 1rem;
+        color: white;
+    }
 }
 
-.circle {
-    width: 4vh;
-    height: 4vh;
-    line-height: 4vh;
-    border-radius: 50%;
-    font-size: 1rem;
-    color: slateblue;
-    text-align: center;
-    background: #fff;
-}
+@media screen and (max-width: 840px) {
+    .container {
+        max-width: 10vw;
+        max-height: 10vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        user-select: none;
+        touch-action: none;
+    }
 
-.name {
-    font-size: 1rem;
-    color: white;
+    .circle {
+        width: 4vw;
+        height: 4vw;
+        line-height: 4vw;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: slateblue;
+        text-align: center;
+        background: #fff;
+    }
+
+    .name {
+        font-size: 1rem;
+        color: white;
+    }
 }
 </style>
